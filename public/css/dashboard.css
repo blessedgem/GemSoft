@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Regencie Light;
+    src: url('/fonts/RegencieLight.ttf');
+}
+
+@font-face {
+    font-family: Open Sans Light;
+    src: url('/fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: Cantarell;
+    src: url('/fonts/Cantarell-Regular.ttf');
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color: #FFF;
+  font-family: Cantarell;
+  font-size: 11px;
+}
