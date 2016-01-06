@@ -22,7 +22,34 @@ body{
 }
 
 header#main-header{
-  height:80px;
+  height:100px;
+  line-height: 100px;
   background-color: #FFF;
   box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 1px 1px rgba(0,0,0,0.2);
+}
+
+div#inner-header{
+  width:95%;
+  margin:0 auto;
+}
+
+div#logo-container{
+  width:80px;
+  height:80px;
+  float:left;
+}
+
+div#logo-container img{
+  width:100%;
+}
+
+div#name-container{
+  float:right;
+  color:#8e44ad;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.clear-floats{
+  clear:both;
 }

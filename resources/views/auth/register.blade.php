@@ -18,17 +18,19 @@
 
 		<div id = "login-box">
 
-			<h1> <i class="fa fa-lock"></i> Login</h1>
+			<h1> <i class="fa fa-check-square"></i> Register</h1>
 
 			@include('errors.error_list')
 
-			
-
-			<form method="POST" action="{{ url('/auth/login') }}">
+			<form method="POST" action="{{ url('/auth/register') }}">
 
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-				<input type="text" class="form-control" name="email" placeholder="Username" value="{{ old('email') }}">
+				<input type="text" class="form-control" name="name" placeholder="Name" value="{{ old('name') }}">
+
+				<br/>
+
+				<input type="text" class="form-control" name="email" placeholder="Email" value="{{ old('email') }}">
 
 				<br/>
 
@@ -36,9 +38,17 @@
 
 				<br/>
 
-				<button class = "btn btn-primary" type="submit"><i class="fa fa-sign-in"></i> Login</button>
+				<input type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password">
+
+				<br/>
+
+				<button class = "btn btn-primary" type="submit"><i class="fa fa-check"></i> Register</button>
 
 			</form>
+
+			<br/>
+
+			<span>Go to <a href = "/auth/login" >Login Page</a></span>
 
 		</div>
 

@@ -28,7 +28,7 @@
 
 				<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-				<input type="text" class="form-control" name="email" placeholder="Username" value="{{ old('email') }}">
+				<input type="text" class="form-control" name="email" placeholder="Email" value="{{ old('email') }}">
 
 				<br/>
 
@@ -39,6 +39,10 @@
 				<button class = "btn btn-primary" type="submit"><i class="fa fa-sign-in"></i> Login</button>
 
 			</form>
+
+			<br/>
+
+			<span>Not a member? <a href = "/auth/register" >Register</a></span>
 
 		</div>
 

@@ -21,6 +21,19 @@
 <body>
 
 	<header id = "main-header">
+
+		<div id = "inner-header">
+		
+			<div id = "logo-container">
+				<img src = "/images/gemsoft_logo.png" />
+			</div>
+
+			<div id = "name-container">
+				{{ Auth::user()->name }}
+			</div>
+
+			<div class = "clear-both"></div>
+		</div>
 		
 	</header>
 
