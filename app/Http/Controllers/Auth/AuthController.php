@@ -28,9 +28,19 @@ class AuthController extends Controller
      *
      * @return void
      */
+
+    //Redirect to after login authentication
+    protected $redirectTo = "/dashboard";
+
+
     public function __construct()
     {
         $this->middleware('guest', ['except' => 'getLogout']);
+    }
+
+    protected function getFailedLoginMessage()
+    {
+        return 'Incorrect login credentials';
     }
 
     /**

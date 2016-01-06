@@ -12,10 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect("auth/login");
+});
+
+Route::get('/home', function () {
+    return redirect("/dashboard");
 });
 
 Route::controllers([
   'auth' => 'Auth\AuthController',
   'password' => 'Auth\PasswordController',
 ]);
+
+//Dashboard routes
+Route::group(['middleware' => ['auth'], 'prefix' => "dashboard"], function()
+{
+	Route::get('/','DashboardController@index');
+});
