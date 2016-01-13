@@ -29,3 +29,13 @@ Route::group(['middleware' => ['auth'], 'prefix' => "dashboard"], function()
 {
 	Route::get('/','DashboardController@index');
 });
+
+
+//Routing my controllers
+Route::resource('categories','CategoryController');
+
+Route::resource('products','ProductController');
+
+Route::resource('sales','SaleController');
+
+Route::resource('quaters','QuaterController');

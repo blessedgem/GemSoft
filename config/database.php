@@ -27,6 +27,8 @@ return [
     */
 
     'default' => env('DB_CONNECTION', 'mysql'),
+    //$users = DB::connection()->select('mysql','pgsql','sqlite');
+
 
     /*
     |--------------------------------------------------------------------------
@@ -55,8 +57,8 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
+            'database'  => env('DB_DATABASE', 'Sale'),
+            'username'  => env('DB_USERNAME', 'root'),
             'password'  => env('DB_PASSWORD', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
@@ -67,9 +69,9 @@ return [
         'pgsql' => [
             'driver'   => 'pgsql',
             'host'     => env('DB_HOST', 'localhost'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE', 'Sales'),
+            'username' => env('DB_USERNAME', 'postgres'),
+            'password' => env('DB_PASSWORD', 'gem'),
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',
